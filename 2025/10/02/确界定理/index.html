@@ -20,12 +20,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.23.2","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="定理叙述 确界定理 (The Completeness Axiom)任何非空的实数集 $E \subset \mathbb{R}$，若有上界，则必有上确界；若有下界，则必有下确界。  定义  上界 (Upper Bound): 若存在数 $L$，使得对于任意 $x \in E$，都有 $x \le L$，则称 $L$ 是 $E$ 的一个上界。 上确界 (Supremum): 若 $M$ 是 $E$">
+    <meta name="description" content="定理叙述  确界定理 (The Completeness Axiom) 任何非空的实数集 E ⊂ ℝ，若有上界，则必有上确界；若有下界，则必有下确界。  定义  上界 (Upper Bound): 若存在数 L，使得对于任意 x ∈ E，都有 x ≤ L，则称 L 是 E 的一个上界。 上确界 (Supremum): 若 M 是 E 的一个上界，且对于任何小于 M 的数 M′，都存在">
 <meta property="og:type" content="article">
 <meta property="og:title" content="确界定理 (The Completeness Axiom)">
 <meta property="og:url" content="http://example.com/2025/10/02/%E7%A1%AE%E7%95%8C%E5%AE%9A%E7%90%86/index.html">
 <meta property="og:site_name" content="Plog">
-<meta property="og:description" content="定理叙述 确界定理 (The Completeness Axiom)任何非空的实数集 $E \subset \mathbb{R}$，若有上界，则必有上确界；若有下界，则必有下确界。  定义  上界 (Upper Bound): 若存在数 $L$，使得对于任意 $x \in E$，都有 $x \le L$，则称 $L$ 是 $E$ 的一个上界。 上确界 (Supremum): 若 $M$ 是 $E$">
+<meta property="og:description" content="定理叙述  确界定理 (The Completeness Axiom) 任何非空的实数集 E ⊂ ℝ，若有上界，则必有上确界；若有下界，则必有下确界。  定义  上界 (Upper Bound): 若存在数 L，使得对于任意 x ∈ E，都有 x ≤ L，则称 L 是 E 的一个上界。 上确界 (Supremum): 若 M 是 E 的一个上界，且对于任何小于 M 的数 M′，都存在">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-10-02T10:42:15.000Z">
 <meta property="article:modified_time" content="2025-10-02T10:42:22.291Z">
@@ -131,7 +131,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E7%90%86%E5%8F%99%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">定理叙述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%81%E6%98%8E"><span class="nav-number">2.</span> <span class="nav-text">证明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%85%E5%BD%A2-1-E-%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E7%A9%BA%E4%B8%94%E4%BB%85%E5%8C%85%E5%90%AB%E9%9D%9E%E8%B4%9F%E6%95%B0%E7%9A%84%E9%9B%86%E5%90%88"><span class="nav-number">2.1.</span> <span class="nav-text">情形 1: $E$ 是一个非空且仅包含非负数的集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E6%9E%84%E9%80%A0%E4%B8%8B%E7%A1%AE%E7%95%8C-p"><span class="nav-number">2.1.1.</span> <span class="nav-text">第一步：构造下确界 $p$</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E8%AF%81%E6%98%8E-p-%E6%98%AF-E-%E7%9A%84%E4%B8%8B%E7%A1%AE%E7%95%8C"><span class="nav-number">2.1.2.</span> <span class="nav-text">第二步：证明 $p$ 是 $E$ 的下确界</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%85%E5%BD%A2-2-E-%E5%8C%85%E5%90%AB%E8%B4%9F%E6%95%B0"><span class="nav-number">2.2.</span> <span class="nav-text">情形 2: $E$ 包含负数</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E7%90%86%E5%8F%99%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">定理叙述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%81%E6%98%8E"><span class="nav-number">2.</span> <span class="nav-text">证明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%85%E5%BD%A2-1-e-%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E7%A9%BA%E4%B8%94%E4%BB%85%E5%8C%85%E5%90%AB%E9%9D%9E%E8%B4%9F%E6%95%B0%E7%9A%84%E9%9B%86%E5%90%88"><span class="nav-number">2.1.</span> <span class="nav-text">情形 1: E 是一个非空且仅包含非负数的集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%E6%9E%84%E9%80%A0%E4%B8%8B%E7%A1%AE%E7%95%8C-p"><span class="nav-number">2.1.1.</span> <span class="nav-text">第一步：构造下确界 p</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%E8%AF%81%E6%98%8E-p-%E6%98%AF-e-%E7%9A%84%E4%B8%8B%E7%A1%AE%E7%95%8C"><span class="nav-number">2.1.2.</span> <span class="nav-text">第二步：证明 p 是 E 的下确界</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%85%E5%BD%A2-2-e-%E5%8C%85%E5%90%AB%E8%B4%9F%E6%95%B0"><span class="nav-number">2.2.</span> <span class="nav-text">情形 2: E 包含负数</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -231,65 +231,62 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="定理叙述"><a href="#定理叙述" class="headerlink" title="定理叙述"></a>定理叙述</h2><blockquote>
-<p><strong>确界定理 (The Completeness Axiom)</strong><br>任何非空的实数集 $E \subset \mathbb{R}$，若有上界，则必有上确界；若有下界，则必有下确界。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="定理叙述">定理叙述</h2>
+<blockquote>
+<p><strong>确界定理 (The Completeness Axiom)</strong> 任何非空的实数集 <span class="math inline"><em>E</em> ⊂ ℝ</span>，若有上界，则必有上确界；若有下界，则必有下确界。</p>
 </blockquote>
 <p><strong>定义</strong></p>
 <ul>
-<li><strong>上界 (Upper Bound):</strong> 若存在数 $L$，使得对于任意 $x \in E$，都有 $x \le L$，则称 $L$ 是 $E$ 的一个上界。</li>
-<li><strong>上确界 (Supremum):</strong> 若 $M$ 是 $E$ 的一个上界，且对于任何小于 $M$ 的数 $M’$，都存在 $x \in E$ 使得 $x &gt; M’$，则称 $M$ 是 $E$ 的上确界，记作 $\sup(E)$。</li>
-<li><strong>下界 (Lower Bound):</strong> 若存在数 $l$，使得对于任意 $x \in E$，都有 $x \ge l$，则称 $l$ 是 $E$ 的一个下界。</li>
-<li><strong>下确界 (Infimum):</strong> 若 $m$ 是 $E$ 的一个下界，且对于任何大于 $m$ 的数 $m’$，都存在 $x \in E$ 使得 $x &lt; m’$，则称 $m$ 是 $E$ 的下确界，记作 $\inf(E)$。</li>
+<li><strong>上界 (Upper Bound):</strong> 若存在数 <span class="math inline"><em>L</em></span>，使得对于任意 <span class="math inline"><em>x</em> ∈ <em>E</em></span>，都有 <span class="math inline"><em>x</em> ≤ <em>L</em></span>，则称 <span class="math inline"><em>L</em></span> 是 <span class="math inline"><em>E</em></span> 的一个上界。</li>
+<li><strong>上确界 (Supremum):</strong> 若 <span class="math inline"><em>M</em></span> 是 <span class="math inline"><em>E</em></span> 的一个上界，且对于任何小于 <span class="math inline"><em>M</em></span> 的数 <span class="math inline"><em>M</em>′</span>，都存在 <span class="math inline"><em>x</em> ∈ <em>E</em></span> 使得 <span class="math inline"><em>x</em> &gt; <em>M</em>′</span>，则称 <span class="math inline"><em>M</em></span> 是 <span class="math inline"><em>E</em></span> 的上确界，记作 <span class="math inline">sup (<em>E</em>)</span>。</li>
+<li><strong>下界 (Lower Bound):</strong> 若存在数 <span class="math inline"><em>l</em></span>，使得对于任意 <span class="math inline"><em>x</em> ∈ <em>E</em></span>，都有 <span class="math inline"><em>x</em> ≥ <em>l</em></span>，则称 <span class="math inline"><em>l</em></span> 是 <span class="math inline"><em>E</em></span> 的一个下界。</li>
+<li><strong>下确界 (Infimum):</strong> 若 <span class="math inline"><em>m</em></span> 是 <span class="math inline"><em>E</em></span> 的一个下界，且对于任何大于 <span class="math inline"><em>m</em></span> 的数 <span class="math inline"><em>m</em>′</span>，都存在 <span class="math inline"><em>x</em> ∈ <em>E</em></span> 使得 <span class="math inline"><em>x</em> &lt; <em>m</em>′</span>，则称 <span class="math inline"><em>m</em></span> 是 <span class="math inline"><em>E</em></span> 的下确界，记作 <span class="math inline">inf (<em>E</em>)</span>。</li>
 </ul>
-<hr>
-<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>我们在此证明“有下界必有下确界”。“有上界必有上确界”的证明完全类似。</p>
+<hr />
+<h2 id="证明">证明</h2>
+<p>我们在此证明“有下界必有下确界”。“有上界必有上确界”的证明完全类似。</p>
 <p>我们将证明分为两个部分：首先处理集合元素均为非负数的情形，然后推广到一般情形。</p>
-<h3 id="情形-1-E-是一个非空且仅包含非负数的集合"><a href="#情形-1-E-是一个非空且仅包含非负数的集合" class="headerlink" title="情形 1: $E$ 是一个非空且仅包含非负数的集合"></a>情形 1: $E$ 是一个非空且仅包含非负数的集合</h3><p>假设 $E \subset [0, +\infty)$ 且 $E$ 有下界（例如，0 就是一个下界）。我们的目标是构造出 $E$ 的下确界 $p$。</p>
-<h4 id="第一步：构造下确界-p"><a href="#第一步：构造下确界-p" class="headerlink" title="第一步：构造下确界 $p$"></a>第一步：构造下确界 $p$</h4><p>我们通过逐位确定一个小数 $p &#x3D; p_0.p_1p_2p_3\dots$ 的方式来构造它。</p>
-<ol>
-<li><p><strong>确定整数部分 $p_0$:</strong><br>考虑所有小于等于 $E$ 中所有元素的整数。这些整数构成的集合非空且有上界，因此必定存在一个最大的整数，我们记为 $p_0$。根据 $p_0$ 的定义，它满足：</p>
+<h3 id="情形-1-e-是一个非空且仅包含非负数的集合">情形 1: <span class="math inline"><em>E</em></span> 是一个非空且仅包含非负数的集合</h3>
+<p>假设 <span class="math inline"><em>E</em> ⊂ [0,  + ∞)</span> 且 <span class="math inline"><em>E</em></span> 有下界（例如，0 就是一个下界）。我们的目标是构造出 <span class="math inline"><em>E</em></span> 的下确界 <span class="math inline"><em>p</em></span>。</p>
+<h4 id="第一步构造下确界-p">第一步：构造下确界 <span class="math inline"><em>p</em></span></h4>
+<p>我们通过逐位确定一个小数 <span class="math inline"><em>p</em> = <em>p</em><sub>0</sub>.<em>p</em><sub>1</sub><em>p</em><sub>2</sub><em>p</em><sub>3</sub>…</span> 的方式来构造它。</p>
+<ol type="1">
+<li><strong>确定整数部分 <span class="math inline"><em>p</em><sub>0</sub></span>:</strong> 考虑所有小于等于 <span class="math inline"><em>E</em></span> 中所有元素的整数。这些整数构成的集合非空且有上界，因此必定存在一个最大的整数，我们记为 <span class="math inline"><em>p</em><sub>0</sub></span>。根据 <span class="math inline"><em>p</em><sub>0</sub></span> 的定义，它满足：
 <ul>
-<li>$\forall x \in E, x \ge p_0$</li>
-<li>$p_0+1$ 不是 $E$ 的下界，即 $\exists x_0 \in E, x_0 &lt; p_0+1$。</li>
-</ul>
-</li>
-<li><p><strong>确定第一位小数 $p_1$:</strong><br>在 ${0, 1, 2, \dots, 9}$ 中，寻找最大的整数 $p_1$，使得 $p_0 + \frac{p_1}{10}$ 是 $E$ 的下界。根据其定义，它满足：</p>
+<li><span class="math inline">∀<em>x</em> ∈ <em>E</em>, <em>x</em> ≥ <em>p</em><sub>0</sub></span></li>
+<li><span class="math inline"><em>p</em><sub>0</sub> + 1</span> 不是 <span class="math inline"><em>E</em></span> 的下界，即 <span class="math inline">∃<em>x</em><sub>0</sub> ∈ <em>E</em>, <em>x</em><sub>0</sub> &lt; <em>p</em><sub>0</sub> + 1</span>。</li>
+</ul></li>
+<li><strong>确定第一位小数 <span class="math inline"><em>p</em><sub>1</sub></span>:</strong> 在 <span class="math inline">{0, 1, 2, …, 9}</span> 中，寻找最大的整数 <span class="math inline"><em>p</em><sub>1</sub></span>，使得 <span class="math inline">$p_0 + \frac{p_1}{10}$</span> 是 <span class="math inline"><em>E</em></span> 的下界。根据其定义，它满足：
 <ul>
-<li>$\forall x \in E, x \ge p_0.p_1$</li>
-<li>$p_0.p_1 + 0.1$ 不是 $E$ 的下界。</li>
-</ul>
-</li>
-<li><p><strong>递推构造 $p_n$:</strong><br>假设我们已经确定了 $p_0, p_1, \dots, p_{n-1}$。令 $q_{n-1} &#x3D; p_0.p_1p_2\dots p_{n-1}$。我们在 ${0, 1, 2, \dots, 9}$ 中寻找最大的整数 $p_n$，使得 $q_n &#x3D; q_{n-1} + \frac{p_n}{10^n}$ 是 $E$ 的下界。<br>根据此构造，对于任意 $n \in \mathbb{N}$，我们都有：</p>
+<li><span class="math inline">∀<em>x</em> ∈ <em>E</em>, <em>x</em> ≥ <em>p</em><sub>0</sub>.<em>p</em><sub>1</sub></span></li>
+<li><span class="math inline"><em>p</em><sub>0</sub>.<em>p</em><sub>1</sub> + 0.1</span> 不是 <span class="math inline"><em>E</em></span> 的下界。</li>
+</ul></li>
+<li><strong>递推构造 <span class="math inline"><em>p</em><sub><em>n</em></sub></span>:</strong> 假设我们已经确定了 <span class="math inline"><em>p</em><sub>0</sub>, <em>p</em><sub>1</sub>, …, <em>p</em><sub><em>n</em> − 1</sub></span>。令 <span class="math inline"><em>q</em><sub><em>n</em> − 1</sub> = <em>p</em><sub>0</sub>.<em>p</em><sub>1</sub><em>p</em><sub>2</sub>…<em>p</em><sub><em>n</em> − 1</sub></span>。我们在 <span class="math inline">{0, 1, 2, …, 9}</span> 中寻找最大的整数 <span class="math inline"><em>p</em><sub><em>n</em></sub></span>，使得 <span class="math inline">$q_n = q_{n-1} + \frac{p_n}{10^n}$</span> 是 <span class="math inline"><em>E</em></span> 的下界。 根据此构造，对于任意 <span class="math inline"><em>n</em> ∈ ℕ</span>，我们都有：
 <ul>
-<li>$q_n &#x3D; p_0.p_1p_2\dots p_n$ 是 $E$ 的下界。</li>
-<li>$q_n + \frac{1}{10^n}$ 不是 $E$ 的下界。</li>
-</ul>
-</li>
-<li><p><strong>定义实数 $p$:</strong><br>我们定义 $p$ 为由以上过程构造出的无限小数 $p_0.p_1p_2p_3\dots$ 所代表的实数。这个数是数列 ${q_n}$ 的极限，即 $p &#x3D; \lim_{n \to \infty} q_n$。</p>
-</li>
+<li><span class="math inline"><em>q</em><sub><em>n</em></sub> = <em>p</em><sub>0</sub>.<em>p</em><sub>1</sub><em>p</em><sub>2</sub>…<em>p</em><sub><em>n</em></sub></span> 是 <span class="math inline"><em>E</em></span> 的下界。</li>
+<li><span class="math inline">$q_n + \frac{1}{10^n}$</span> 不是 <span class="math inline"><em>E</em></span> 的下界。</li>
+</ul></li>
+<li><strong>定义实数 <span class="math inline"><em>p</em></span>:</strong> 我们定义 <span class="math inline"><em>p</em></span> 为由以上过程构造出的无限小数 <span class="math inline"><em>p</em><sub>0</sub>.<em>p</em><sub>1</sub><em>p</em><sub>2</sub><em>p</em><sub>3</sub>…</span> 所代表的实数。这个数是数列 <span class="math inline">{<em>q</em><sub><em>n</em></sub>}</span> 的极限，即 <span class="math inline"><em>p</em> = lim<sub><em>n</em> → ∞</sub><em>q</em><sub><em>n</em></sub></span>。</li>
 </ol>
-<h4 id="第二步：证明-p-是-E-的下确界"><a href="#第二步：证明-p-是-E-的下确界" class="headerlink" title="第二步：证明 $p$ 是 $E$ 的下确界"></a>第二步：证明 $p$ 是 $E$ 的下确界</h4><p>我们需要证明两点：(a) $p$ 是 $E$ 的下界；(b) $p$ 是 $E$ 的最大下界。</p>
-<p><strong>(a) 证明 $p$ 是 $E$ 的下界</strong></p>
-<p>任取一个元素 $x \in E$。根据我们的构造过程，对于任意的 $n \in \mathbb{N}$，$q_n &#x3D; p_0.p_1\dots p_n$ 都是 $E$ 的下界。因此，对于所有的 $n$，都有 $q_n \le x$。<br>由于 $p$ 是单调不减数列 ${q_n}$ 的极限，那么必然有 $p &#x3D; \lim_{n \to \infty} q_n \le x$。<br>因为 $x$ 是 $E$ 中的任意元素，所以 $p$ 是 $E$ 的一个下界。</p>
-<p><strong>(b) 证明 $p$ 是 $E$ 的最大下界</strong></p>
-<p>设 $c$ 是任意一个大于 $p$ 的实数，即 $c &gt; p$。我们需要证明 $c$ 不是 $E$ 的下界。<br>因为 $c &gt; p$，所以 $c-p &gt; 0$。因此，存在一个正整数 $N$ 使得 $c - p &gt; \frac{1}{10^N}$。<br>这意味着 $c &gt; p + \frac{1}{10^N}$。又因为 $p \ge q_N$，所以 $c &gt; q_N + \frac{1}{10^N}$。<br>而根据我们的构造过程， $q_N + \frac{1}{10^N}$ 不是 $E$ 的下界。<br>所以，一定存在一个元素 $x’ \in E$，使得 $x’ &lt; q_N + \frac{1}{10^N}$。<br>结合 $c &gt; q_N + \frac{1}{10^N}$，我们得到 $x’ &lt; c$。<br>这就证明了任何大于 $p$ 的数 $c$ 都不是 $E$ 的下界。</p>
-<p>综上所述，$p$ 是 $E$ 的最大下界，即 $p &#x3D; \inf(E)$。</p>
-<h3 id="情形-2-E-包含负数"><a href="#情形-2-E-包含负数" class="headerlink" title="情形 2: $E$ 包含负数"></a>情形 2: $E$ 包含负数</h3><p>设 $E$ 是一个有下界的非空实数集。我们构造一个新的集合 $E’ &#x3D; {-x \mid x \in E}$。</p>
-<ol>
-<li><p><strong>证明 $E’$ 有上界:</strong><br>因为 $E$ 有下界，所以存在一个实数 $L$，使得对所有 $x \in E$，都有 $x \ge L$。<br>将不等式两边同乘 $-1$，得到 $-x \le -L$。<br>这意味着对于 $E’$ 中的所有元素 $y &#x3D; -x$，都有 $y \le -L$。<br>因此，$E’$ 是有上界的（$-L$ 是它的一个上界）。</p>
-</li>
-<li><p><strong>应用上确界的存在性:</strong><br>根据定理的另一半（有上界必有上确界），集合 $E’$ 必然存在一个上确界。我们设 $M &#x3D; \sup(E’)$。</p>
-</li>
-<li><p><strong>证明 $-M$ 是 $E$ 的下确界:</strong><br>我们需要证明 $-M$ 满足下确界的两个条件。</p>
+<h4 id="第二步证明-p-是-e-的下确界">第二步：证明 <span class="math inline"><em>p</em></span> 是 <span class="math inline"><em>E</em></span> 的下确界</h4>
+<p>我们需要证明两点：(a) <span class="math inline"><em>p</em></span> 是 <span class="math inline"><em>E</em></span> 的下界；(b) <span class="math inline"><em>p</em></span> 是 <span class="math inline"><em>E</em></span> 的最大下界。</p>
+<p><strong>(a) 证明 <span class="math inline"><em>p</em></span> 是 <span class="math inline"><em>E</em></span> 的下界</strong></p>
+<p>任取一个元素 <span class="math inline"><em>x</em> ∈ <em>E</em></span>。根据我们的构造过程，对于任意的 <span class="math inline"><em>n</em> ∈ ℕ</span>，<span class="math inline"><em>q</em><sub><em>n</em></sub> = <em>p</em><sub>0</sub>.<em>p</em><sub>1</sub>…<em>p</em><sub><em>n</em></sub></span> 都是 <span class="math inline"><em>E</em></span> 的下界。因此，对于所有的 <span class="math inline"><em>n</em></span>，都有 <span class="math inline"><em>q</em><sub><em>n</em></sub> ≤ <em>x</em></span>。 由于 <span class="math inline"><em>p</em></span> 是单调不减数列 <span class="math inline">{<em>q</em><sub><em>n</em></sub>}</span> 的极限，那么必然有 <span class="math inline"><em>p</em> = lim<sub><em>n</em> → ∞</sub><em>q</em><sub><em>n</em></sub> ≤ <em>x</em></span>。 因为 <span class="math inline"><em>x</em></span> 是 <span class="math inline"><em>E</em></span> 中的任意元素，所以 <span class="math inline"><em>p</em></span> 是 <span class="math inline"><em>E</em></span> 的一个下界。</p>
+<p><strong>(b) 证明 <span class="math inline"><em>p</em></span> 是 <span class="math inline"><em>E</em></span> 的最大下界</strong></p>
+<p>设 <span class="math inline"><em>c</em></span> 是任意一个大于 <span class="math inline"><em>p</em></span> 的实数，即 <span class="math inline"><em>c</em> &gt; <em>p</em></span>。我们需要证明 <span class="math inline"><em>c</em></span> 不是 <span class="math inline"><em>E</em></span> 的下界。 因为 <span class="math inline"><em>c</em> &gt; <em>p</em></span>，所以 <span class="math inline"><em>c</em> − <em>p</em> &gt; 0</span>。因此，存在一个正整数 <span class="math inline"><em>N</em></span> 使得 <span class="math inline">$c - p &gt; \frac{1}{10^N}$</span>。 这意味着 <span class="math inline">$c &gt; p + \frac{1}{10^N}$</span>。又因为 <span class="math inline"><em>p</em> ≥ <em>q</em><sub><em>N</em></sub></span>，所以 <span class="math inline">$c &gt; q_N + \frac{1}{10^N}$</span>。 而根据我们的构造过程， <span class="math inline">$q_N + \frac{1}{10^N}$</span> 不是 <span class="math inline"><em>E</em></span> 的下界。 所以，一定存在一个元素 <span class="math inline"><em>x</em>′ ∈ <em>E</em></span>，使得 <span class="math inline">$x' &lt; q_N + \frac{1}{10^N}$</span>。 结合 <span class="math inline">$c &gt; q_N + \frac{1}{10^N}$</span>，我们得到 <span class="math inline"><em>x</em>′ &lt; <em>c</em></span>。 这就证明了任何大于 <span class="math inline"><em>p</em></span> 的数 <span class="math inline"><em>c</em></span> 都不是 <span class="math inline"><em>E</em></span> 的下界。</p>
+<p>综上所述，<span class="math inline"><em>p</em></span> 是 <span class="math inline"><em>E</em></span> 的最大下界，即 <span class="math inline"><em>p</em> = inf (<em>E</em>)</span>。</p>
+<h3 id="情形-2-e-包含负数">情形 2: <span class="math inline"><em>E</em></span> 包含负数</h3>
+<p>设 <span class="math inline"><em>E</em></span> 是一个有下界的非空实数集。我们构造一个新的集合 <span class="math inline"><em>E</em>′ = { − <em>x</em> ∣ <em>x</em> ∈ <em>E</em>}</span>。</p>
+<ol type="1">
+<li><p><strong>证明 <span class="math inline"><em>E</em>′</span> 有上界:</strong> 因为 <span class="math inline"><em>E</em></span> 有下界，所以存在一个实数 <span class="math inline"><em>L</em></span>，使得对所有 <span class="math inline"><em>x</em> ∈ <em>E</em></span>，都有 <span class="math inline"><em>x</em> ≥ <em>L</em></span>。 将不等式两边同乘 <span class="math inline"> − 1</span>，得到 <span class="math inline"> − <em>x</em> ≤  − <em>L</em></span>。 这意味着对于 <span class="math inline"><em>E</em>′</span> 中的所有元素 <span class="math inline"><em>y</em> =  − <em>x</em></span>，都有 <span class="math inline"><em>y</em> ≤  − <em>L</em></span>。 因此，<span class="math inline"><em>E</em>′</span> 是有上界的（<span class="math inline"> − <em>L</em></span> 是它的一个上界）。</p></li>
+<li><p><strong>应用上确界的存在性:</strong> 根据定理的另一半（有上界必有上确界），集合 <span class="math inline"><em>E</em>′</span> 必然存在一个上确界。我们设 <span class="math inline"><em>M</em> = sup (<em>E</em>′)</span>。</p></li>
+<li><p><strong>证明 <span class="math inline"> − <em>M</em></span> 是 <span class="math inline"><em>E</em></span> 的下确界:</strong> 我们需要证明 <span class="math inline"> − <em>M</em></span> 满足下确界的两个条件。</p>
 <ul>
-<li><p><strong>(a) $-M$ 是 $E$ 的下界:</strong><br>  对任意 $y \in E’$，根据上确界的定义有 $y \le M$。<br>  因为 $E’$ 的元素形式为 $-x$ (其中 $x \in E$)，所以对任意 $x \in E$，都有 $-x \le M$。<br>  两边同乘 $-1$，得到 $x \ge -M$。<br>  这表明 $-M$ 是集合 $E$ 的一个下界。</p>
-</li>
-<li><p><strong>(b) $-M$ 是 $E$ 的最大下界:</strong><br>  设 $c$ 是 $E$ 的任意一个下界，则 $\forall x \in E, x \ge c$。<br>  两边同乘 $-1$，得 $-x \le -c$。<br>  这意味着 $-c$ 是集合 $E’ &#x3D; {-x}$ 的一个上界。<br>  因为 $M$ 是 $E’$ 的最小上界（上确界），所以必有 $M \le -c$。<br>  再次两边同乘 $-1$，得到 $-M \ge c$。<br>  这表明我们构造出的下界 $-M$ 大于或等于任何其他的下界 $c$。</p>
-</li>
-</ul>
-</li>
+<li><p><strong>(a) <span class="math inline"> − <em>M</em></span> 是 <span class="math inline"><em>E</em></span> 的下界:</strong> 对任意 <span class="math inline"><em>y</em> ∈ <em>E</em>′</span>，根据上确界的定义有 <span class="math inline"><em>y</em> ≤ <em>M</em></span>。 因为 <span class="math inline"><em>E</em>′</span> 的元素形式为 <span class="math inline"> − <em>x</em></span> (其中 <span class="math inline"><em>x</em> ∈ <em>E</em></span>)，所以对任意 <span class="math inline"><em>x</em> ∈ <em>E</em></span>，都有 <span class="math inline"> − <em>x</em> ≤ <em>M</em></span>。 两边同乘 <span class="math inline"> − 1</span>，得到 <span class="math inline"><em>x</em> ≥  − <em>M</em></span>。 这表明 <span class="math inline"> − <em>M</em></span> 是集合 <span class="math inline"><em>E</em></span> 的一个下界。</p></li>
+<li><p><strong>(b) <span class="math inline"> − <em>M</em></span> 是 <span class="math inline"><em>E</em></span> 的最大下界:</strong> 设 <span class="math inline"><em>c</em></span> 是 <span class="math inline"><em>E</em></span> 的任意一个下界，则 <span class="math inline">∀<em>x</em> ∈ <em>E</em>, <em>x</em> ≥ <em>c</em></span>。 两边同乘 <span class="math inline"> − 1</span>，得 <span class="math inline"> − <em>x</em> ≤  − <em>c</em></span>。 这意味着 <span class="math inline"> − <em>c</em></span> 是集合 <span class="math inline"><em>E</em>′ = { − <em>x</em>}</span> 的一个上界。 因为 <span class="math inline"><em>M</em></span> 是 <span class="math inline"><em>E</em>′</span> 的最小上界（上确界），所以必有 <span class="math inline"><em>M</em> ≤  − <em>c</em></span>。 再次两边同乘 <span class="math inline"> − 1</span>，得到 <span class="math inline"> − <em>M</em> ≥ <em>c</em></span>。 这表明我们构造出的下界 <span class="math inline"> − <em>M</em></span> 大于或等于任何其他的下界 <span class="math inline"><em>c</em></span>。</p></li>
+</ul></li>
 </ol>
-<p>因此，$-M$ 是 $E$ 的最大下界，即<br>$$<br>\inf(E) &#x3D; -M &#x3D; -\sup({-x \mid x \in E})<br>$$<br>证毕。∎</p>
+<p>因此，<span class="math inline"> − <em>M</em></span> 是 <span class="math inline"><em>E</em></span> 的最大下界，即 <span class="math display">inf (<em>E</em>) =  − <em>M</em> =  − sup ({ − <em>x</em> ∣ <em>x</em> ∈ <em>E</em>})</span> 证毕。∎</p>
 
     </div>
 
